@@ -1,0 +1,1 @@
+apt -y install ufw && ufw enable && ufw allow 22/tcp && ufw allow 443/tcp && ufw allow 6443/tcp && ufw allow 2376/tcp && ufw allow 10250/tcp && ufw allow 8472/udp
