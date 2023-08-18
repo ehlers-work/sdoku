@@ -10,9 +10,7 @@ tasks:
     init: | 
       yarn install && yarn run build 
       sudo apt update -y
-      sudo apt install curl git nano qemu qemu-system-x86 linux-image-$(uname -r) libguestfs-tools sshpass netcat -y
-      sudo curl -fsSL https://tailscale.com/install.sh | sh
-      sudo tailscale up --accept-routes --ssh --accept-risk=lose-ssh
+        sudo apt install curl git nano qemu qemu-system-x86 linux-image-$(uname -r) libguestfs-tools sshpass netcat -y
     command: yarn run start
       
 
